@@ -1,0 +1,155 @@
+.menu .menu_logo {
+  background-color: #009bda;
+}
+.menu .menu_logo > a {
+  display: block;
+}
+.menu .menu_logo > a img {
+  width: 100%;
+}
+.menu .menu_text {
+  background-color: #efefef;
+}
+.menu .menu_text > a {
+  display: block;
+  padding: 12px 20px;
+}
+.menu .menu_text > a:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.alx .alx_news {
+  display: table-row;
+}
+.alx .alx_news .lg {
+  display: table-cell;
+  width: 50%;
+  background-color: #efefef;
+  position: relative;
+}
+.alx .alx_news .lg img {
+  display: block;
+  width: 100%;
+}
+.alx .alx_news .lg span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  background-color: #666666;
+  padding: 20px 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.alx .alx_news .rg {
+  display: table-cell;
+  width: 50%;
+}
+.alx .alx_news .rg a {
+  position: relative;
+  float: left;
+  display: block;
+  width: 50%;
+  border-left: 5px solid #fff;
+}
+.alx .alx_news .rg a:nth-child(3) {
+  clear: both;
+}
+.alx .alx_news .rg a:nth-child(-n+2) {
+  border-bottom: 5px solid #fff;
+}
+.alx .alx_news .rg a img {
+  display: block;
+  width: 100%;
+}
+.alx .alx_news .rg a p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 5px;
+  margin-bottom: 0;
+}
+.alx .alx_content {
+  margin-top: 5px;
+}
+.alx .alx_content .item {
+  border-top: 1px solid #000;
+}
+.alx .alx_content .item .text > a {
+  color: #000;
+}
+.alx .alx_content .item .ma-img {
+  padding: 30px;
+}
+.right-info > a img {
+  display: block;
+  width: 100%;
+}
+.right-info .resou {
+  position: relative;
+  border: 1px solid #666;
+  margin-top: 30px;
+  padding: 40px 10px 10px 10px;
+}
+.right-info .resou a .resou-text {
+  color: #666;
+}
+.right-info .resou a span {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background-color: #0096ff;
+  color: #fff;
+  padding: 10px 5px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu .menu_logo a img {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .menu .menu_text a {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .menu .menu_logo {
+    font-size: 24px;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .menu .menu_logo a {
+    color: #fff;
+  }
+  .menu .menu_text a {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  .alx .alx_news .lg {
+    display: block;
+    width: 100%;
+  }
+  .alx .alx_news .lg img {
+    display: block;
+    width: 100%;
+  }
+  .alx .alx_news .rg {
+    display: block;
+    width: 100%;
+  }
+  .alx .alx_news .rg a {
+    background-color: #cccccc;
+  }
+  .alx .alx_news .rg a img {
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}

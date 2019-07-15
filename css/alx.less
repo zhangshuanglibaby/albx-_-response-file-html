@@ -1,0 +1,191 @@
+.menu {
+    .menu_logo {
+        background-color: #009bda;
+        >a {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .menu_text {
+        background-color: #efefef;
+        >a {
+            display: block;
+            padding: 12px 20px;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+.alx {
+    .alx_news {
+        display: table-row;
+        .lg {
+            display: table-cell;
+            width: 50%;
+            background-color: #efefef;
+            position: relative;
+            img {
+                display: block;
+                width: 100%;
+            }
+            span {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                display: block;
+                background-color: #666666;
+                padding: 20px 10px;
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+        .rg {
+            display: table-cell;
+            width: 50%;
+            a {
+                position: relative;
+                float: left;
+                display: block;
+                width: 50%;
+                border-left: 5px solid #fff;
+                &:nth-child(3) {
+                    clear: both;
+                }
+                &:nth-child(-n+2) {
+                    border-bottom: 5px solid #fff;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                }
+                p {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    color: #fff;
+                    background-color: rgba(0,0,0,.5);
+                    padding: 0 5px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .alx_content {
+        margin-top: 5px;
+        .item {
+            border-top: 1px solid #000;
+            .text {
+                >a {
+                    color: #000;
+                }
+            }
+            .ma-img {
+                padding: 30px;
+            }
+
+        }
+    }
+}
+
+.right-info {
+    >a {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .resou {
+        position: relative;
+        border: 1px solid #666;
+        margin-top: 30px;
+        padding: 40px 10px 10px 10px;
+        a {
+            .resou-text {
+                color: #666;
+            }
+            span {
+                position: absolute;
+                top: 0;
+                left: 20px;
+                background-color: #0096ff;
+                color: #fff;
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        .menu_logo {
+            a {
+                img {
+                    display: block;
+                    width: 30%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .menu_text {
+            a {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .menu {
+        .menu_logo {
+            font-size: 24px;
+            padding: 30px 0;
+            text-align: center;
+            a {
+                color: #fff;
+            }
+        }
+        .menu_text {
+            a {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+        }
+    }
+
+    .alx {
+        .alx_news {
+            .lg {
+                display: block;
+                width: 100%;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .rg {
+                display: block;
+                width: 100%;
+                a {
+                  background-color: #cccccc;
+                  img {
+                      width: 50%;
+                      border-radius: 50%;
+                      margin: 0 auto;
+                  }  
+                }
+            }
+        }
+    }
+}
